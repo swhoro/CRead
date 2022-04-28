@@ -1,0 +1,103 @@
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main-window.css">
+  <link rel="stylesheet" href="css/item-setting-window.css">
+  <link rel="stylesheet" href="css/cover.css">
+  <style>
+    html {
+      --page-height: 450px;
+      --top-height: 35px;
+      width: 350px;
+      height: var(--page-height);
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .top-header {
+      height: var(--top-height);
+      position: relative;
+    }
+
+    .icon {
+      position: absolute;
+      /*height: var(--top-height);*/
+      user-select: none;
+      width: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .icon:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+<div id="main-window">
+  <header id="main-header" class="top-header">
+    <img src="/resource/add.png" id="add-item" class="icon icon">
+  </header>
+  <div id="item-list"></div>
+</div>
+
+<div id="item-setting-window" class="invisible">
+  <header id="setting-header" class="top-header">
+    <img src="/resource/close.png" id="cancel" class="icon">
+    <img src="/resource/done.png" id="finished" class="icon">
+  </header>
+  <div class="setting-option">
+    <div>
+      <span>匹配规则</span>
+      <img src="/resource/error.png" title="含此字符串的页面视为同一item">
+    </div>
+    <input id="rule">
+  </div>
+  <div class="setting-option">
+    <div>
+      <span>标题</span>
+      <img src="/resource/error.png" title="设置此item的标题">
+    </div>
+    <input id="title">
+  </div>
+  <div class="setting-option">
+    <div>
+      <span>子标题规则</span>
+      <img src="/resource/error.png" title="设置子标题选择规则，默认为直接取页面标题">
+    </div>
+    <input id="subtitle-rule">
+  </div>
+  <div class="description">
+    <p>子标题选择规则有以下几个选项：</p>
+    <p>1.id选择器，如 #element</p>
+    <p>2.class选择器，需指名元素是第几个，如 .element[0]</p>
+    <p>3.直接填当前页面title（默认值）</p>
+    <p>4.当title中有 | - 符号，可以自动截断标题</p>
+    <p>&ensp;使用title[num]选择，序号从0开始，如title[1]选择第二部分</p>
+  </div>
+  <input type="hidden" id="edit-type">
+  <input type="hidden" id="old-rule">
+  <input type="hidden" id="old-subtitle">
+</div>
+
+<div id="cover">
+  <div id="information-div">
+    <span id="information">错误信息</span>
+    <div id="information-button-cover">
+      <div id="yes-button">确定</div>
+    </div>
+  </div>
+</div>
+<script src="index.js" type="module" async></script>
+</body>
+
+</html>

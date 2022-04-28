@@ -1,0 +1,64 @@
+#item-setting-window {
+  position: absolute;
+  top: var(--page-height);
+  width: 100%;
+  height: 100%;
+  transition: top 0.3s;
+  background-color: white;
+}
+
+#setting-header {
+  background-color: #FF9800;
+}
+
+#cancel {
+  left: 15px;
+}
+
+#finished {
+  right: 15px;
+}
+
+.setting-option {
+  height: 20px;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.setting-option > div {
+  position: relative;
+  width: 27%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.setting-option > div > span {
+  margin-right: 25px;
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+
+.setting-option > div > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+.setting-option > input {
+  height: 100%;
+  width: 70%;
+}
+
+.description > p {
+  margin: 10px 6px;
+}

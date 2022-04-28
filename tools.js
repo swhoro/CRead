@@ -79,7 +79,7 @@ function warn(information) {
 function checkSubtitleRuleLegal(subtitleRule) {
   if (subtitleRule.startsWith("#"))
     return true;
-  if (/^\.\w*\[\d*]$/.test(subtitleRule))
+  if (/^title\[\d*]$/.test(subtitleRule))
     return true;
   if (subtitleRule === "title")
     return true;

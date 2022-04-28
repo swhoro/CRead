@@ -13,7 +13,7 @@
   messageList.id = "cread-message-list";
   document.querySelector("body").appendChild(messageList);
 
-  showMsg("CRead启动");
+  // showMsg("CRead启动");
 
   // msg format:
   // (1) 00[str] = show message in str, should prevent displaying multi times

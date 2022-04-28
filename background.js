@@ -30,7 +30,7 @@ chrome.tabs.onUpdated.addListener(async (_, __, tab) => {
                 return;
               }
               if (url === items[rule]["lastRead"] && subtitle === items[rule]["subtitle"]) {
-                await chrome.tabs.sendMessage(tab["id"], "00未更新");
+                // await chrome.tabs.sendMessage(tab["id"], "00未更新");
                 return;
               }
 
@@ -44,7 +44,7 @@ chrome.tabs.onUpdated.addListener(async (_, __, tab) => {
               const toBeStored = {};
               toBeStored[rule] = newItem;
               await chrome.storage.sync.set(toBeStored);
-              chrome.tabs.sendMessage(tab["id"], "01更新" + newItem["title"]);
+              // chrome.tabs.sendMessage(tab["id"], "01更新" + newItem["title"]);
               delete waitingTab[tab["id"]];
             }, 500);
           }

@@ -1,8 +1,9 @@
 {
   "name": "CRead",
-  "description": "continue reading web",
+  "description": "__MSG_description__",
   "version": "0.0.1",
   "manifest_version": 3,
+  "default_locale": "zh_CN",
   "background": {
     "service_worker": "background.js",
     "type": "module"

@@ -18,5 +18,10 @@
   ],
   "action": {
     "default_popup": "popup/index.html"
+  },
+  "icons": {
+    "16": "CR16.png",
+    "48": "CR48.png",
+    "128": "CR128.png"
   }
 }

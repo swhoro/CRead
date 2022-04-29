@@ -38,7 +38,7 @@ CRead 用于自动追踪同一系列网站上的阅读进度
 
 ## 3.如何安装
 
-[安装 chrominum edge 扩展](place){暂未发布}
+[安装 chrominum edge 扩展](https://microsoftedge.microsoft.com/addons/detail/cread/kebcoljlaffafhkamgclghfkmkhglbcb)
 
 ## 4.其它
 

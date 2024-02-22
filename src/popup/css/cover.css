@@ -1,70 +1,70 @@
 #cover {
-  --transition-duration: 0.3s;
-  --cover-background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: var(--page-height);
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color var(--transition-duration);
+    --transition-duration: 0.3s;
+    --cover-background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: var(--page-height);
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color var(--transition-duration);
 }
 
 #information-div {
-  --information-background-color: white;
-  background-color: rgba(0, 0, 0, 0);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  height: 50%;
-  border: 10px;
-  border-radius: 20px;
-  transition: background-color var(--transition-duration);
+    --information-background-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+    border: 10px;
+    border-radius: 20px;
+    transition: background-color var(--transition-duration);
 }
 
 #information {
-  --information-color: black;
-  color: rgba(0, 0, 0, 0);
-  display: block;
-  height: 157px;
-  width: 100%;
-  font-size: 30px;
-  text-align: center;
-  line-height: 157px;
-  user-select: none;
-  transition: color var(--transition-duration);
+    --information-color: black;
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    height: 157px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 157px;
+    user-select: none;
+    transition: color var(--transition-duration);
 }
 
 #information-button-cover {
-  height: 30%;
-  width: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 30%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #yes-button {
-  --btn-color: black;
-  --btn-background-color: red;
-  color: rgba(0, 0, 0, 0);
-  margin: auto;
-  width: 45%;
-  height: 40px;
-  font-size: 20px;
-  line-height: 40px;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  border-radius: 15px;
-  user-select: none;
-  transition: color var(--transition-duration), background-color var(--transition-duration);
+    --btn-color: black;
+    --btn-background-color: red;
+    color: rgba(0, 0, 0, 0);
+    margin: auto;
+    width: 45%;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border-radius: 15px;
+    user-select: none;
+    transition: color var(--transition-duration), background-color var(--transition-duration);
 }
 
 #yes-button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }

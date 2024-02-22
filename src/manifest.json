@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "default_locale": "zh_CN",
   "background": {
-    "service_worker": "background.js",
+    "service_worker": "background/background.js",
     "type": "module"
   },
   "permissions": [

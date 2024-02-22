@@ -1,0 +1,69 @@
+#cread-message-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 230px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#cread-message-box {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition-duration: 0.5s;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-duration);
+    animation-name: box-up;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes box-up {
+    from {
+        top: 120px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+#cread-message-box>span {
+    display: block;
+    height: 100px;
+    font-size: 15px;
+    line-height: 100px;
+    text-align: center;
+    user-select: none;
+}
+
+#cread-message-box>div {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background-color: red;
+    animation-name: line-short;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes line-short {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}

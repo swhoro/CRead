@@ -39,15 +39,3 @@ CRead 用于自动追踪同一系列网站上的阅读进度
 ## 3.如何安装
 
 [安装 chrominum edge 扩展](https://microsoftedge.microsoft.com/addons/detail/cread/kebcoljlaffafhkamgclghfkmkhglbcb)
-
-## 4.其它
-
-### 1.恳求各位帮助
-
-本人能力有限，代码能力非常糟糕，这个扩展可能有一堆 bug，而且代码组织说实在的自己有时候都看不下去。希望有能力、有时间的大佬能多多帮助这个项目。
-
-本人设计能力有限，界面糟糕，如果有大佬能贡献一些设计是再好不过的。
-
-### 2.为什么没有 chrome 拓展
-
-如上所述，本人能力有限，没能力、没时间去检查是否兼容 chrome。若要自己打包发布至 chrome 商店，请自便。
